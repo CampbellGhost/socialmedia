@@ -1,0 +1,56 @@
+@import './variables';
+
+  .left-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    position: -webkit-sticky;
+    top:70px;
+    align-items: flex-start;
+    height: fit-content;
+    
+    .important-links{
+      border-bottom: 1px solid #ccc;
+      a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        width: fit-content;
+        color: #626262;
+        font-family: $font-family;
+
+        img{
+          width: 25px;
+          margin-right: 15px;
+        }
+
+        &:last-child{
+          color: #1876f2;
+        }
+      }
+    }
+    
+    .shortcut-links{
+      p{
+        margin: 25px 0px;
+        font-weight: 500;
+        font-family: $font-family;
+        color:#626262
+      }
+      a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        width: fit-content;
+        color: #626262;
+        font-family: $font-family;
+
+        img{
+          width: 50px;
+          border-radius: 4px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }

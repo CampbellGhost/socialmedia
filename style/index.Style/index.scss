@@ -1,0 +1,27 @@
+
+@import './onlineGreenDot';
+@import './navbar';
+@import './storyboard';
+@import './writePostContainer';
+@import './postContainer';
+@import './left-sidebar';
+@import './right-sidebar';
+@import './footer';
+// Profile partials
+@import './profile';
+@import '../mediaQuery/mediaQueryIndex';
+@import '../mediaQuery/mediaQueryProfile';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  $font-family:$font-family;
+}
+body{
+  background-color: rgb(236, 236, 236);
+}
+//green dot to show that the user is online
+ 
+
+

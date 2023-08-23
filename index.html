@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/index.Style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/7288d38684.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheckMe</title>
+</head>
+<body>
+  <!-- The main navbar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html"><img class="logo" src="Images/7945659d077c4fd3a8742186712a8c0d.png"></a>
+      <ul>
+        <li><img class="icon" src="Images/noti.png" alt=""></li>
+        <li><img class="icon" src="Images/inbox.png" alt=""></li>
+        <li><img class="icon" src="Images/video.png" alt=""></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="searchbox">
+        <img class="icon" src="Images/search.png" alt="">
+        <input type="text" name="search" placeholder="Search">
+      </div>
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img class="profile"  src="Images/Jon_snow.jpg" alt="">
+      </div>
+    </div>
+    
+    <!-- settings menu in the nav bar -->
+    <div class="settings-menu">
+      <div class="user-profile">
+        <img src="Images/Jon_snow.jpg" alt="">
+        <div>
+          <p>John Snow</p>
+          <a href="profile.html">See you profile</a>
+        </div>
+      </div>
+      <hr>
+      <div class="user-setting-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/6926/6926149.png" alt="">
+        <div>
+          <p>Give Feedback</p>
+          <a href="#">Help us to improve the design</a>
+        </div>
+      </div>
+      <hr>
+      <div class="user-setting-icon icon-size">
+        <img src="https://cdn-icons-png.flaticon.com/512/2956/2956788.png" alt="" class="">
+        <a href="">Setting & Privacy <i class="fa-solid fa-chevron-right" style="color: #9a9a9a;"></i></a>
+      </div>
+      <div class="user-setting-icon icon-size">
+        <img src="https://cdn-icons-png.flaticon.com/512/1660/1660165.png" alt="" class="">
+        <a href="">Help & Support <i class="fa-solid fa-chevron-right" style="color: #9a9a9a;"></i></a>
+      </div>
+      <div class="user-setting-icon icon-size">
+        <img src="https://cdn-icons-png.flaticon.com/512/136/136687.png" alt="" class="">
+        <a href="">Display & Accessibility <i class="fa-solid fa-chevron-right" style="color: #9a9a9a;"></i></a>
+      </div>
+      <div class="user-setting-icon icon-size">
+        <img src="https://cdn-icons-png.flaticon.com/512/3889/3889524.png" alt="" class="">
+        <a href="#">Logout <i class="fa-solid fa-chevron-right" style="color: #9a9a9a;"></i></a>
+      </div>
+      
+      
+    </div>
+  </nav>
+
+  <div class="container">
+    <!------- left side bar ----->
+    <div class="left-sidebar">
+      <div class="important-links">
+        <a href="#">
+          <img src="Images/news.png" alt="">
+          Latest News
+        </a>
+        <a href="#">
+          <img src="Images/friends.png" alt="">
+          Friends
+        </a>
+        <a href="#">
+          <img src="Images/group.png" alt="">
+          Group
+        </a>
+        <a href="#">
+          <img src="Images/marketplace.png" alt="">
+          Marketplace
+        </a>
+        <a href="#">
+          <img src="Images/watch.png" alt="">
+          Watch
+        </a>
+        <a href="#">
+          See More
+        </a>
+      </div>
+      <div class="shortcut-links">
+        <p>Your Shortcuts</p>
+        <a href="#">
+          <img src="Images/webdev.jpg" alt="">
+          Web Developer
+        </a>
+        <a href="#">
+          <img src="Images/webdev.jpg" alt="">
+          Web Design Course
+        </a>
+        <a href="#">
+          <img src="Images/fullstack.png" alt="">
+          Full Stack Development
+        </a>
+        <a href="#">
+          <img src="Images/seo.jpg" alt="">
+          Seo Experts
+        </a>
+      </div>
+    </div>
+
+    <!------ main content bar ----->
+
+    <!-- Storyboard -->
+    <div class="main-content">
+      <div class="story-gallery">
+        <div class="story story-1">
+          <img src="Images/plusPost.png" alt="">
+          <p>Post Story</p>
+        </div>
+        <div class="story">
+          <img src="Images/daenerys.png" alt="">
+          <p>Daenerys</p>
+        </div>
+        <div class="story">
+          <img src="Images/jeffery.png" alt="">
+          <p>Joffrey</p>
+        </div>
+        <div class="story">
+          <img src="Images/sansa.png" alt="">
+          <p>Sansa</p>
+        </div>
+        <div class="story">
+          <img src="Images/got.jpeg" alt="">
+          <p>GOT</p>
+        </div>
+      </div>
+
+      <!-- write post container -->
+      <div class="write-post-container">
+        <div class="user-profile">
+          <img src="Images/Jon_snow.jpg" alt="">
+          <div>
+            <p>John Snow</p>
+            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+          </div>
+        </div>
+        <div class="post-input-container">
+          <textarea placeholder="What's on your mind, John?" name="" id="" cols="1" rows="5"></textarea>
+          <div class="post-link">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/833/833453.png" alt="#"><p>Photo/Video</p></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/9386/9386952.png" alt="#"><p>Tag People</p></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/4012/4012629.png" alt="#"><p>Feeling/Activity</p></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/9195/9195776.png" alt="#"><p>Live Video</p></a>
+
+          </div>
+        </div>
+      </div>
+    <!-- feeds container--> 
+
+      <div class="write-post-container">
+      <div class="user-profile">
+        <img src="Images/Jon_snow.jpg" alt="">
+        <div>
+          <p>John Snow</p>
+          <span>June 24 2023, 22:30</span>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical" ></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laboriosam ipsa quod nesciunt quos maiores magni dolorum delectus facere aut consequuntur est nostrum, libero sapiente! <a href="">#Chechme2023</a></p>
+      <img class="post-img" src="https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives-768x492.png" alt="">
+      <div class="post-result">
+        <a href="">
+          <i class="fa-solid fa-heart fa-xl"> 
+          <i class="fa-solid fa-thumbs-up ">
+          </i></i>
+          John Snow and 249 others</a>
+        
+        <div class="comment-share">
+          <a href=""><span>20</span> Comments</a> 
+          <a href=""><span>20</span> Shares</a> 
+        </div> 
+      </div>
+      <div class="post-buttons">
+        <a href="">
+          <i class="fa-regular fa-thumbs-up fa-xl"></i>Like
+        </a>
+        <a href="">
+          <i class="fa-regular fa-comment fa-xl"></i>Comment
+        </a>
+        <a href="">
+          <i class="fa-brands fa-facebook-messenger fa-xl" ></i>Message
+        </a>
+      </div>
+    </div>
+
+    <div class="write-post-container">
+      <div class="user-profile">
+        <img src="Images/Jon_snow.jpg" alt="">
+        <div>
+          <p>John Snow</p>
+          <span>June 24 2023, 22:30</span>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical" ></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laboriosam ipsa quod nesciunt quos maiores magni dolorum delectus facere aut consequuntur est nostrum, libero sapiente! <a href="">#Chechme2023</a></p>
+      <img class="post-img" src="https://assets.justinmind.com/wp-content/uploads/2018/11/Lorem-Ipsum-alternatives-768x492.png" alt="">
+      <div class="post-result">
+        <a href="">
+          <i class="fa-solid fa-heart fa-xl"> 
+          <i class="fa-solid fa-thumbs-up ">
+          </i></i>
+          John Snow and 249 others</a>
+        
+        <div class="comment-share">
+          <a href=""><span>20</span> Comments</a> 
+          <a href=""><span>20</span> Shares</a> 
+        </div> 
+      </div>
+      <div class="post-buttons">
+        <a href="">
+          <i class="fa-regular fa-thumbs-up fa-xl"></i>Like
+        </a>
+        <a href="">
+          <i class="fa-regular fa-comment fa-xl"></i>Comment
+        </a>
+        <a href="">
+          <i class="fa-brands fa-facebook-messenger fa-xl" ></i>Message
+        </a>
+      </div>
+    </div>
+    </div>
+    <!------ right side bar ------->
+    <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See All</a>
+      </div>
+      <div class="events">
+        <div class="left">
+          <h3>18</h3>
+          <span>March</span>
+        </div>
+        <div class="right">
+          <h4>Social Media</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Taipei Arena, Taipei </p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="events">
+        <div class="left">
+          <h3>25</h3>
+          <span>June</span>
+        </div>
+        <div class="right">
+          <h4>AI/ML Meetup</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Taipei Arena, Taipei</p>
+          <a href="#">More Info</a>
+        </div>
+      </div>
+      <div class="sidebar-title">
+        <h4>Advertisement</h4>
+        <a href="#">close</a>
+      </div>
+      <img src="Images/advert.jpg" class="sidebar-ads">
+      
+      <div class="sidebar-title">
+        <h4>Messages</h4>
+        <a href="#">Hide Chat</a>
+      </div>
+
+      <div class="online-list">
+        <div class="online">
+          <img src="Images/Jon_snow.jpg" alt="">
+        </div>
+        <p>John Snow</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="Images/Jon_snow.jpg" alt="">
+        </div>
+        <p>John Doe</p>
+      </div>
+      <div class="online-list">
+        <div class="online">
+          <img src="Images/Jon_snow.jpg" alt="">
+        </div>
+        <p>Allison Kidd</p>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <p>Copyright 2021 ~ Designed in Taiwan by Gao</p>
+  </footer>
+
+<script src="./Js/index.js"></script>
+</body>
+</html>

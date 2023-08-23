@@ -1,0 +1,14 @@
+@import './variables';
+
+footer{
+  font-family: $font-family;
+  font-size: 12px;
+  color: #626262;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin: 20px auto;
+  
+}
